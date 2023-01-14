@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         
         titleLabel.text = ""
         var charIndex = 0.0
-        let textForLabel = "⚡️FlashChat"
+        let textForLabel = K.appName
         
         for letter in textForLabel{
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex,

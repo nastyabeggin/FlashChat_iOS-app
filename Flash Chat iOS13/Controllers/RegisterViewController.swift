@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
                 } else {
                     // Navigate to chatVC
                     self.errorLabel.text = ""
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
         }
