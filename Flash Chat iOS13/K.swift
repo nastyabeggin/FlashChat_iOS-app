@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct K {
     static let appName = "⚡️FlashChat"
@@ -16,6 +17,9 @@ struct K {
     static let loginSegue = "LoginToChat"
     
     struct BrandColors {
+        static let black = UIColor.black
+        static let white = UIColor.white
+
         static let purple = "BrandPurple"
         static let lightPurple = "BrandLightPurple"
         static let blue = "BrandBlue"

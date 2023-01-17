@@ -298,16 +298,16 @@
         <scene sceneID="yeH-Ia-3JZ">
             <objects>
                 <viewController id="lwd-AH-u8E" customClass="ChatViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CEy-W8-acN">
+                    <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CEy-W8-acN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-hg-cne">
-                                <rect key="frame" x="0.0" y="92" width="414" height="710"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlo-0G-XA6">
-                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UWj-GQ-Vph">
                                         <rect key="frame" x="20" y="20" width="304" height="50"/>
@@ -338,7 +338,7 @@
                                     <constraint firstItem="pym-e9-R2r" firstAttribute="top" secondItem="xlo-0G-XA6" secondAttribute="top" constant="20" id="27T-Dx-HYk"/>
                                     <constraint firstItem="UWj-GQ-Vph" firstAttribute="top" secondItem="xlo-0G-XA6" secondAttribute="top" constant="20" id="FKs-Vm-x9G"/>
                                     <constraint firstItem="UWj-GQ-Vph" firstAttribute="leading" secondItem="xlo-0G-XA6" secondAttribute="leading" constant="20" id="SmO-dP-jGc"/>
-                                    <constraint firstAttribute="height" constant="60" id="cV2-4S-DU8"/>
+                                    <constraint firstAttribute="height" constant="90" id="cV2-4S-DU8"/>
                                     <constraint firstItem="pym-e9-R2r" firstAttribute="leading" secondItem="UWj-GQ-Vph" secondAttribute="trailing" constant="20" id="xZQ-Wv-YxR"/>
                                     <constraint firstAttribute="trailing" secondItem="pym-e9-R2r" secondAttribute="trailing" constant="20" id="ycp-Iy-yM8"/>
                                 </constraints>
@@ -351,7 +351,7 @@
                             <constraint firstItem="xlo-0G-XA6" firstAttribute="leading" secondItem="6YX-ca-E8f" secondAttribute="leading" id="JMa-Pn-SZL"/>
                             <constraint firstItem="S6L-hg-cne" firstAttribute="leading" secondItem="6YX-ca-E8f" secondAttribute="leading" id="KGE-QV-Ill"/>
                             <constraint firstItem="6YX-ca-E8f" firstAttribute="bottom" secondItem="xlo-0G-XA6" secondAttribute="bottom" id="KKG-6H-f0d"/>
-                            <constraint firstItem="xlo-0G-XA6" firstAttribute="top" secondItem="S6L-hg-cne" secondAttribute="bottom" id="Qf3-lP-Y4a"/>
+                            <constraint firstItem="xlo-0G-XA6" firstAttribute="top" secondItem="S6L-hg-cne" secondAttribute="bottom" constant="8" id="Qf3-lP-Y4a"/>
                             <constraint firstItem="xlo-0G-XA6" firstAttribute="trailing" secondItem="6YX-ca-E8f" secondAttribute="trailing" id="ce0-gb-Mph"/>
                             <constraint firstItem="S6L-hg-cne" firstAttribute="top" secondItem="6YX-ca-E8f" secondAttribute="top" id="sQt-L5-8LV"/>
                         </constraints>
@@ -377,13 +377,19 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Afo-Rp-ZR3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ltd-PN-MFj">
+                    <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ltd-PN-MFj">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBarAppearance key="standardAppearance"/>
+                        <color key="barTintColor" name="BrandLightPurple"/>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular">
+                            <color key="backgroundColor" name="BrandPurple"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g3p-Ht-ArW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Tim-3B-f4n" kind="relationship" relationship="rootViewController" id="RK2-F7-Mb2"/>
                     </connections>
