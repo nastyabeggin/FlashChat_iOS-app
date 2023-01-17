@@ -1,55 +1,29 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# FlashChat iOS-app
+ 
+Проект с курса **"iOS & Swift - The Complete iOS App Development Bootcamp"**. 
 
-# Flash-Chat
+Приложение-мессенджер с регистрацией и авторизацией с базой данных, хранящей пользователей и сообщения. 
 
-## Our Goal
-
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
-
-## What you will create
-
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
-
-## What you will learn
-
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+## Used technologies 
+- Cocoapods
+- UIKit 
+– FirebaseAuth
+– Firestore database 
 
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+## User experience 
 
-```
+### Регистрация 
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+https://user-images.githubusercontent.com/45201186/212951634-f6c7892b-3063-4b87-929e-71d5fe1011ca.mp4
 
-![End Banner](Documentation/readme-end-banner.png)
+
+### Переписка 
+
+https://user-images.githubusercontent.com/45201186/212953879-8fff2dae-f769-497c-ab8a-fd2ece0a4c30.mp4
+
+
+### Scroll таблицы и автоматический подъем поля ввода при печати 
+
+https://user-images.githubusercontent.com/45201186/212954979-c95d60bf-0521-489f-bcf7-c5de0dfa8afc.mp4
+
