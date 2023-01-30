@@ -6,9 +6,9 @@
 
 ## Used technologies 
 - Cocoapods
-- UIKit \n
-– FirebaseAuth
-– Firestore database 
+- UIKit  
+– FirebaseAuth    
+– Firestore database  
 
 
 ## User experience 
