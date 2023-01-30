@@ -8,7 +8,7 @@
 - Cocoapods
 - UIKit
 - FirebaseAuth
-– Firestore database    
+- Firestore database    
 
 
 ## User experience 
